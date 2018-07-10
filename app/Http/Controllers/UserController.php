@@ -21,7 +21,7 @@ class UserController extends Controller
 
         $user = DB::table('users')->where([
             ['mail', request()->input('email')],
-            ['password', request()->input('password')]
+            ['password', md5(request()->input('password'))]
         ])->get();
 
         $logged = false;
@@ -43,7 +43,7 @@ class UserController extends Controller
     public function ajaxRequestPost() {
         $user = DB::table('users')->where([
             ['mail', request()->input('email')],
-            ['password', request()->input('password')]
+            ['password', md5(request()->input('password'))]
         ])->get();
         $logged = false;
         if(sizeof($user) > 0) {
