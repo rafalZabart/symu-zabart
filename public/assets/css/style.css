@@ -1,0 +1,100 @@
+#page {
+  background-color: #182231;
+  color: #ffffff;
+  height: 100vh;
+}
+
+.login-form input {
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: #293446;
+  border: 1px solid #313d4f;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+.login-form {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #232d3d;
+  color: #ffffff;
+}
+
+label {
+  color: #848c98;
+}
+
+.submit-button {
+  margin-top: 10px;
+  background-color: #007aff !important;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  opacity: 0.7;
+}
+
+.projects,
+.panel-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project {
+  width: 19%;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project-image {
+  cursor: crosshair;
+  display: inline-block;
+  position: relative;
+}
+
+.project-discussion {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+
+.project-discussion:hover {
+  background-color: blue;
+}
+
+@media screen and (min-width: 981px) {
+  .login-form {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .login-form {
+    width: 90%;
+  }
+  .project {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login-form {
+    width: 90%;
+  }
+  .project {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
