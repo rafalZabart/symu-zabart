@@ -4,7 +4,7 @@
         <div class="login-form">
             <h1 class="text-center">Symu</h1>
             @php echo Form::open(array('url' => '/panel', 'method' => 'post')); @endphp @php echo Form::label('email', 'E-Mail'); @endphp
-            <br> @php echo Form::email('email', 'marley96666@gmail.com'); @endphp
+            <br> @php echo Form::email('email'); @endphp
             <br> @php echo Form::label('password', 'Password'); @endphp
             <br> @php echo Form::password('password'); @endphp
             <br> @php echo Form::submit('Zaloguj', ['class' => 'btn submit-button']); @endphp @php echo Form::close(); @endphp
