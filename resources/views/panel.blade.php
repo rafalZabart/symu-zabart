@@ -5,6 +5,7 @@
                 <div></div>
                 <div></div>
                 <div class="login-info">
+                <p>test</p>
                     @foreach ($users as $user) 
                         <p>Zalogowany jako: {{ $user->mail }}</p>
                     @endforeach
